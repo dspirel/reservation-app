@@ -26,4 +26,7 @@ $router->addRoute("POST", "/add-reservation", "addReservation", ReservationContr
 $router->addRoute("GET", "/edit-reservation", "showEditReservationForm", ReservationController::class);
 $router->addRoute("POST", "/edit-reservation", "updateReservation", ReservationController::class);
 
+$router->addRoute("POST", "/delete-reservation", "deleteReservation", ReservationController::class);
+
+
 $router->dispatch();

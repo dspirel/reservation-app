@@ -39,4 +39,12 @@
             <button type="button" onclick="window.location='/reservationsApp/'">Close</button>
         </form>
     </div>
+    <div>
+        <form action="delete-reservation" method="POST">
+        <label for="id"><b>ID:</b></label>
+        <input type="text" name="id" readonly="true" value= <?php echo $id ?> >
+        <br>
+        <button type="submit">Delete reservation</button>
+    </div>
+    
 </body>

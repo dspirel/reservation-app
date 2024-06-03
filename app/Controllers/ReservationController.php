@@ -63,6 +63,11 @@ class ReservationController extends Controller
         $this->render("edit-reservation");
     }
 
+    public function deleteReservation() {
+        $this->rmodel->deleteReservation($_POST["id"]);
+        $this->redirect("/");
+    }
+
     private function validateInput($data) {
         $inputErrors = [];
         //last_name

@@ -41,4 +41,8 @@ class ReservationModel extends Model
         // echo "</pre>";
     }
 
+    public function deleteReservation($id) {
+        $this->db->deleteReservation($id);
+    }
+
 }

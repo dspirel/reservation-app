@@ -166,4 +166,19 @@ class Database {
             echo $e;
         }
     }
+
+    public function deleteReservation($id) {
+        $sql = "DELETE FROM reservation WHERE id = ? and userID = ?";
+
+        $stmt = $this->conn->prepare($sql);
+        //bind id,userID
+        $stmt->bindParam(1, $id, PDO::PARAM_STR);
+        $stmt->bindParam(2, $_SESSION["user"], PDO::PARAM_STR);
+
+        try {
+            $stmt->execute();
+        } catch (PDOException $e) {
+            echo $e;
+        }
+    }
 }
