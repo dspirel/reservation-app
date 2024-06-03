@@ -1,0 +1,17 @@
+{
+    "name": "davor/reservations-app",
+    "description": "rapp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davor Spirelja",
+            "email": "davor.spirelja@gmail.com"
+        }
+    ],
+    "require": {}
+}
