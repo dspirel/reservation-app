@@ -13,6 +13,7 @@
             <button onclick="window.location.href='add-reservation'">New Reservation</button>
         </div>
         <br>
+        <h1>TEST</h1>
         <div>
             <form id="date-change" action="/reservationsApp/" method="GET">
                 <label for="dpicker">Show reservations on:</label>
