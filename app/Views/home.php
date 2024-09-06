@@ -14,6 +14,7 @@
         </div>
         <br>
         <h1>TEST</h1>
+        <h2>TEST2</h2>
         <div>
             <form id="date-change" action="/reservationsApp/" method="GET">
                 <label for="dpicker">Show reservations on:</label>
